@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "Oleo-Script";
+    src: url(/resources/fonts/OleoScriptSwashCaps-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(/resources/fonts/Ubuntu-Regular.ttf) format("truetype");
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #2D1832;
+    color: #FFFFFF;
+    /* background-color: #D6E9F5; */
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 2rem;
+    position: fixed;
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+    background-color: #2D1832;
+}
+
+
+
+
+header nav {
+    margin-right: 2rem;
+}
+
+header h1 {
+    font-family: "Oleo-Script", sans-serif;
+    font-size: 2rem;
+    flex-grow: 1;
+}
+
+
+header li {
+    margin-top: .5rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+header li a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    border: #D6E9F5 solid 1px;
+}
+
+header li a:hover {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #2D1832;
+    background-color: #D6E9F5;
+    border-radius: 1rem;
+    border: #D6E9F5 solid 1px;
+}
+
+@media only screen and (max-width: 550px) {
+    header h1 {
+        display: none;
+    }
+
+    header nav {
+        margin: 0 auto;
+    }
+
+}
+
+/* Main */
+main {
+    padding-top: 4rem;
+}
+
+main .banner {
+    text-align: center;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-image: url(/resources/images/background-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .banner h2 {
+    font-weight: bold;
+    font-family: "Oleo-Script", sans-serif;
+    font-size: 3rem;
+}
+
+main .banner h2 sup {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+main .banner h3 {
+    margin-top: 0.9rem;
+    font-size: 1.5rem;
+}
+
+main .banner h4 {
+    margin-top: 1.1rem;
+    padding: 0.1rem;
+    font-size: 1.4rem;
+    font-family: "Oleo-Script", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+main .banner-text {
+    background-color: #2D1832;
+    padding: .4rem;
+}
+
+main .our-projects {
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .our-projects h2 {
+    font-size: 1.7rem;
+    padding: 1em;
+    font-weight: 700;
+    font-family: "Oleo-Script", sans-serif;
+}
+
+main .our-projects h3 {
+    font-size: 1.5rem;
+    padding: 1em;
+    font-weight: 700;
+}
+
+
+main .our-projects-projects {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+main .project {
+    display: flex;
+    flex-direction: column;
+}
+
+main .project img {
+    width: 30rem;
+    border-radius: 10px;
+    border: #D6E9F5 solid 1px;
+    margin-top: 1rem;
+}
+
+
+main .our-team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/resources/images/backgroun-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .our-team h2 {
+    background-color: #2D1832;
+    font-size: 2rem;
+    padding: 1em;
+    font-weight: 700;
+    font-family: "Oleo-Script", sans-serif;
+    letter-spacing: 00.1rem;
+    border-radius: 0 0 15px 15px;
+}
+
+
+main .our-team-peoples {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+@media only screen and (max-width: 1280px) {
+    main .our-team-peoples {
+        flex-direction: column;
+    }
+}
+
+main .people {
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #2D1832;
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+main .people h3 {
+    font-size: 1.7rem;
+    padding: 1em 0;
+    font-weight: 700;
+    font-family: "Oleo-Script", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+main .people p {
+    font-size: 1.7rem;
+    padding: .4em 0;
+    font-weight: 400;
+}
+
+main .our-team img {
+    width: 20rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer h3 {
+    font-size: 2rem;
+    padding: 1em;
+    font-weight: 700;
+    font-family: "Oleo-Script", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 1rem;
+}
